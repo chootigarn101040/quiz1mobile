@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <title>Shop Mall</title>
+</head>
+
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button icon="fa-shopping-bag"></ons-toolbar-button>
+            </div>
+            <div class="center">Home</div>
+            <div class="right">
+                <ons-toolbar-button icon="md-help"></ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+        <ons-tabbar swipeable position="auto">
+            <ons-tab page="tab1.html" label="Home" icon="ion-home, material:md-home" badge="7" active>
+            </ons-tab>
+            <ons-tab page="tab2.html" label="Cart" icon="fa-shopping-bag" active-icon="fa-shopping-bag">
+            </ons-tab>
+        </ons-tabbar>
+
+        <template id="tab1.html">
+            <ons-page id="Tab1">
+                <p style="text-align: center;">
+                    <input type="search" value="" placeholder="Search" class="search-input search-input--material" style="width: 280px;">
+                </p>
+
+
+
+                <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height: 300px;">
+
+                    <ons-carousel-item style="background: url('img/1.jpg')no-repeat center;background-size: contain;">
+                        <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+
+                        </div>
+                    </ons-carousel-item>
+                    <ons-carousel-item style="background: url('img/2.jpg')no-repeat center;background-size: contain;">
+                        <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+
+                        </div>
+                    </ons-carousel-item>
+                    <ons-carousel-item style="background: url('img/3.jpg')no-repeat center;background-size: contain;">
+                        <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+
+                        </div>
+                    </ons-carousel-item>
+                </ons-carousel>
+
+
+                <ons-row style="height:120px" vertical-align="center">
+
+                    <ons-col style="background:palevioletred;">
+                        <p style="text-align: center; margin: 10px;">
+                            <ons-icon size="60px" icon="md-face"></ons-icon>
+                        </p>
+                        <p style="text-align: center; margin: 10px;">
+                            Beauty
+                        </p>
+                    </ons-col>
+                    <ons-col style="background:lightcoral;">
+                        <p style="text-align: center; margin: 10px;">
+                            <ons-icon size="60px" icon="md-directions-bike"></ons-icon>
+                        </p>
+                        <p style="text-align: center; margin: 10px;">
+                            Sport
+                        </p>
+                    </ons-col>
+                    <ons-col style="background:pink;">
+                        <p style="text-align: center; margin: 10px;">
+                            <ons-icon size="60px" icon="md-desktop-mac"></ons-icon>
+                        </p>
+                        <p style="text-align: center; margin: 10px;">
+                            Computer
+                        </p>
+                    </ons-col>
+
+                    <ons-row style="height:120px" vertical-align="center">
+                        <ons-col style="background:teal;">
+                            <p style="text-align: center; margin: 10px;">
+                                <ons-icon size="60px" icon="md-camera"></ons-icon>
+                            </p>
+                            <p style="text-align: center; margin: 10px;">
+                                Camera
+                            </p>
+                        </ons-col>
+                        <ons-col style="background:paleturquoise;">
+                            <p style="text-align: center; margin: 10px;">
+                                <ons-icon size="60px" icon="md-airline-seat-recline-extra"></ons-icon>
+                            </p>
+                            <p style="text-align: center; margin: 10px;">
+                                Furniture
+                            </p>
+                        </ons-col>
+
+                        <ons-col style="background:lightcyan;">
+                            <p style="text-align: center; margin: 10px;">
+                                <ons-icon size="60px" icon="md-smartphone"></ons-icon>
+                            </p>
+                            <p style="text-align: center; margin: 10px;">
+                                Smartphone
+                            </p>
+                        </ons-col>
+
+                        <ons-row style="height:120px" vertical-align="center">
+                            <ons-col style="background:mediumslateblue;">
+                                <p style="text-align: center; margin: 10px;">
+                                    <ons-icon size="60px" icon="md-toys"></ons-icon>
+                                </p>
+                                <p style="text-align: center; margin: 10px;">
+                                    Toy
+                                </p>
+                            </ons-col>
+                            <ons-col style="background:plum;">
+                                <p style="text-align: center; margin: 10px;">
+                                    <ons-icon size="60px" icon="md-router"></ons-icon>
+                                </p>
+                                <p style="text-align: center; margin: 10px;">
+                                    Hardware
+                                </p>
+                            </ons-col>
+
+
+                            <ons-col style="background:thistle;">
+                                <p style="text-align: center; margin: 10px;">
+                                    <ons-icon size="60px" icon="md-local-cafe"></ons-icon>
+                                </p>
+                                <p style="text-align: center; margin: 10px;">
+                                    Appliance
+                                </p>
+                            </ons-col>
+
+            </ons-page>
+
+        </template>
+
+        <template id="tab2.html">
+            <ons-page id="Tab2">
+                <p style="text-align: center;">
+
+                    <ul class="list">
+                        <li class="list-item">
+                            <div class="list-item__left">
+                                <img class="list-item__thumbnail" src="img/item1.jpg">
+                            </div>
+
+                            <div class="list-item__center">
+                                <div class="list-item__title">Apple watch Series 3 GPS 42mm Gray</div>
+                                <div class="list-item__subtitle">12,650.00 Baht</div>
+                            </div>
+                        </li>
+
+                        <li class="list-item">
+                            <div class="list-item__left">
+                                <img class="list-item__thumbnail" src="img/item2.jpg">
+                            </div>
+
+                            <div class="list-item__center">
+                                <div class="list-item__title">MICROLAB SPEAKER 2.1</div>
+                                <div class="list-item__subtitle">1,570.00 Baht</div>
+                            </div>
+                        </li>
+
+                        <li class="list-item">
+                            <div class="list-item__left">
+                                <img class="list-item__thumbnail" src="img/item3.jpg">
+                            </div>
+
+                            <div class="list-item__center">
+                                <div class="list-item__title">Nike Air Max 90 ดำเทาแดง เบอร์ 40</div>
+                                <div class="list-item__subtitle">2,990.00 Baht</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <button class="button--large--cta" style="width: 95%; margin: 0 auto;">PROCEED TO PAY</button>
+                </p>
+            </ons-page>
+
+        </template>
+    </ons-page>
+
+
+
+    <script>
+
+        document.addEventListener('prechange', function (event) {
+            document.querySelector('ons-toolbar .center')
+                .innerHTML = event.tabItem.getAttribute('label');
+        });
+
+        var prev = function () {
+            var carousel = document.getElementById('carousel');
+            carousel.prev();
+        };
+
+        var next = function () {
+            var carousel = document.getElementById('carousel');
+            carousel.next();
+        };
+
+        ons.ready(function () {
+            var carousel = document.addEventListener('postchange', function (event) {
+                console.log('Changed to ' + event.activeIndex)
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>
